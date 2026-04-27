@@ -3,6 +3,20 @@
 
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
+    // Disclaimer dialog — show once per browser, dismissed state stored in localStorage.
+    const dialog = document.getElementById('disclaimer-dialog');
+    const DISMISS_KEY = 'abbaspizza-disclaimer-dismissed';
+    if (dialog && !localStorage.getItem(DISMISS_KEY)) {
+        if (typeof dialog.showModal === 'function') {
+            dialog.showModal();
+        } else {
+            dialog.setAttribute('open', '');
+        }
+        dialog.addEventListener('close', () => {
+            localStorage.setItem(DISMISS_KEY, '1');
+        });
+    }
+
     // Slider — auto-cycle every 4 seconds with a 1-second cross-fade.
     // Manual prev/next + dot navigation reset the timer.
     const slides = document.querySelectorAll('#slider .slide');
