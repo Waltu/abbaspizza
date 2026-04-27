@@ -1,0 +1,15 @@
+{
+  "name": "abbaspizza",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Abbas Pizza – static site served from Cloudflare Workers",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp -R index.html style.css script.js images dist/",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "version:upload": "npm run build && wrangler versions upload"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
