@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbas Pizza | Ruokaa rakkaudella ja raikkailla resepteillä</title>
+    <meta name="description" content="Abbas Pizza Tampere – käsin tehtyjä pizzoja tuoreista raaka-aineista. Nokiantie 70, 33300 Tampere.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180x180.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="main-header">
+    <div class="header-inner">
+        <a href="#top" class="logo-link">
+            <img src="images/AbbasLogo.svg" alt="Abbas Pizza" id="logo">
+        </a>
+        <nav>
+            <ul class="nav">
+                <li><a href="#top">Koti</a></li>
+                <li><a href="#contact">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+        <button id="mobile-nav-toggle" aria-label="Avaa valikko">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <section id="hero" class="parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="hero-content">
+            <img src="images/AbbasLogo.svg" alt="Abbas Pizza" class="hero-logo">
+            <p class="hero-tagline">ruokaa rakkaudella ja raikkailla resepteillä</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <p class="about-text">
+                Abbas ei ole tavallinen pizzanpaistaja. Hän leipoo pizzat käsityönä alusta loppuun
+                saakka huolella valituista raaka-aineista. Pizzoissa avautuu sekä klassinen italialainen
+                että lähi-idän eksoottinen makujen maailma. Abbas etsii jatkuvasti uusia makuja ja
+                kehittää reseptejään.
+            </p>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/Raholankioski/" class="social-facebook"
+                       title="Facebook" target="_blank" rel="noopener">
+                        <span class="social-label">Facebook</span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.3H7.7V13h2.7v8h3.1z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCLcNFi407O7JAkcu_x6b2Hg" class="social-youtube"
+                       title="Youtube" target="_blank" rel="noopener">
+                        <span class="social-label">YouTube</span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.6 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15.2V8.8l5.2 3.2-5.2 3.2z"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="slider" aria-label="Kuvaesitys">
+        <div class="slides">
+            <div class="slide active" style="background-image: url('images/Taustakuva_test040.jpg');">
+                <div class="slide-content"><h2>Käsin tehtyä</h2></div>
+            </div>
+            <div class="slide" style="background-image: url('images/Taustakuva120.jpg');">
+                <div class="slide-content"><h2>Tuoreista raaka-aineista</h2></div>
+            </div>
+            <div class="slide" style="background-image: url('images/Taustakuva_90.jpg');">
+                <div class="slide-content"><h2>Omalla reseptillä</h2></div>
+            </div>
+            <div class="slide" style="background-image: url('images/Taustakuva_test050.jpg');">
+                <div class="slide-content"><h2>Huolella ja rakkaudella</h2></div>
+            </div>
+            <div class="slide" style="background-image: url('images/Taustakuva_test030.jpg');">
+                <div class="slide-content"><h2>Ammattitaidolla</h2></div>
+            </div>
+            <div class="slide" style="background-image: url('images/Taustakuva110.jpg');">
+                <div class="slide-content"><h2>Tule ja maista!</h2></div>
+            </div>
+        </div>
+        <button class="slider-arrow slider-prev" aria-label="Edellinen kuva">&#10094;</button>
+        <button class="slider-arrow slider-next" aria-label="Seuraava kuva">&#10095;</button>
+        <div class="slider-dots" role="tablist"></div>
+    </section>
+
+    <section id="contact">
+        <div class="container contact-grid">
+            <div class="contact-block">
+                <p class="contact-heading">Avoinna</p>
+                <p>
+                    ma–to: 11 – 21<br>
+                    pe–la: 11 – 22<br>
+                    su: 12 – 21
+                </p>
+            </div>
+            <div class="contact-block">
+                <p class="contact-heading">Yhteystiedot</p>
+                <p>
+                    Puh: <a href="tel:+358334411115">03 344 1115</a> /
+                    <a href="tel:+358400407547">0400 407 547</a><br>
+                    Nokiantie 70, 33300 Tampere
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe
+            title="Kartta: Abbas Pizza, Nokiantie 70, 33300 Tampere"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.7920625877343!2d23.6401325!3d61.49974999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468ed99492a200eb%3A0x827524af9efe0e61!2sAbbas%20Pizza!5e0!3m2!1sen!2sfi!4v1777299065462!5m2!1sen!2sfi"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+</main>
+
+<footer id="main-footer">
+    <p>Copyright &copy; 2017 - <span id="current-year">2026</span> <a href="#top">Abbas Pizza</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
